@@ -85,7 +85,7 @@ def churn_response(message:Churn):
     
     message=dict(message)
     message=pd.DataFrame([message])
-    prediction=churn_model.predict(message)
+    prediction=churn_model.predict(message)[0]
     predict_form=churn_out[prediction]
     
     return {"response":predict_form}
@@ -95,7 +95,7 @@ def churn_response(message:Churn):
 def creative_response(message:Creative):
     message=dict(message)
     message=pd.DataFrame([message])
-    prediction=creative_model.predict(message)
+    prediction=creative_model.predict(message)[0]
     predict_form=creative_target_out[prediction]
     
     return {"response":predict_form}
