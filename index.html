@@ -26,7 +26,7 @@
         <p class="subtitle">Enter 25 parameters for Churn & Markting analysis</p>
 
         <form id="predictionForm">
-
+        <div class="form-group">
             <div class="form-grid">
                 <label for="months">Subscribtion Months (months):</label>
                 <input type="number" id="months" step="any" required>
@@ -64,125 +64,137 @@
             </div>
 
             <div class="form-grid">
-                <label for="hnd_orice"></label>
+                <label for="hnd_orice">Handest Price</label>
                 <input type="number" id="hnd_price" step="any" required>
             </div>
 
             <div class="form-grid">
-                <label for="mou_Mean"></label>
+                <label for="mou_Mean">Mean Minutes Of Use</label>
                 <input type="number" id="mou_Mean" step="any" required>
             </div>
 
             <div class="form-grid">
-                <label for="hnd_webcap"></label>
+                <label for="hnd_webcap">Handset Web Capability</label>
                 <select  id="hnd_webcap" required>
-                    <option value="WCMB"></option>
-                    <option value="WC"></option>
-                    <option value="Missing"></option>
-                    <option value="UNKW"></option>
+                    <option value="WCMB">Web Capable Full Browser</option>
+                    <option value="WC">Standard Web Capable</option>
+                    <option value="Missing">Missing</option>
+                    <option value="UNKW">Unknown</option>
                 </select>
             </div>
 
             <div class="form-grid">
-                <label for="totmrc"></label>
+                <label for="totmrc_Mean">Mean Total Monthly Recurring Charge</label>
                 <input type="number" id="totmrc" step="any" required>
             </div>
 
             <div class="form-grid">
-                <label for="change_mou"></label>
+                <label for="change_mou">Change in Minutes of Use</label>
                 <input type="number" id="change_mou" step="any" required>
             </div>
 
             <div class="form-grid">
-                <label for="creditcd"></label>
+                <label for="creditcd">Has Credit Card</label>
                 <select  id="creditcd" required>
-                    <option value="N"></option>
-                    <option value="Y"></option>
+                    <option value="N">No</option>
+                    <option value="Y">Yes</option>
                 </select>
             </div>
 
             <div class="form-grid">
-                <label for="ovrmou_Mean"></label>
+                <label for="ovrmou_Mean">Mean Overage Minutes</label>
                 <input type="number" id="ovrmou_Mean" step="any" required>
             </div>
 
             <div class="form-grid">
-                <label for="avgqty"></label>
+                <label for="avgqty">Average Quantity of Calls</label>
                 <input type="number" step="any" id="avgqty" required>
             </div>
 
             <div class="form-grid">
-                <label for="lor"></label>
+                <label for="lor">Length Of Redidence</label>
                 <input type="number" id="lor" step="any" required>
             </div>
 
             <div class="form-grid">
-                <label for="change_rev"></label>
+                <label for="change_rev">Change In Revenue</label>
                 <input type="number"  id="change_rev" step="any" required>
             </div>
 
             <div class="form-grid">
-                <label for="avgrev"></label>
+                <label for="avgrev">Average Monthly Revenue</label>
                 <input type="number"  id="avgrev" step="any" required>
             </div>
 
             <div class="form-grid">
-                <label for="actvsubs"></label>
+                <label for="actvsubs">Number Of Active Subscribtions</label>
                 <input type="number" id="actvsubs" step="any" required>
             </div>
 
             <div class="form-grid">
-                <label for="income"></label>
+                <label for="income">Estimated Income Level</label>
                 <input type="number" id="income" step="any" required>
             </div>
 
             <div class="form-grid">
-                <label for="rev_Mean"></label>
+                <label for="rev_Mean">Mean Revenue</label>
                 <input type="number" step="any" required id="rev_Mean">
             </div>
 
             <div class="form-grid">
-                <label for="mouiwylisv_Mean"></label>
+                <label for="mouiwylisv_Mean">Unbound Inbound Minutes</label>
                 <input type="number" id="mouiwylisv_Mean" required step="any">
             </div>
 
             <div class="form-grid">
-                <label for="dualband"></label>
+                <label for="dualband">Has Dualband Handset</label>
                 <select id="dualband" required>
-                    <option value="N"></option>
-                    <option value="Y"></option>
-                    <option value="T"></option>
-                    <option value="U"></option>
+                    <option value="N">No Dualband</option>
+                    <option value="Y">Has Dualband</option>
+                    <option value="T">Limited Support</option>
+                    <option value="U">Unknown</option>
                 </select>
             </div>
 
             <div class="form-grid">
-                <label for="marital"></label>
-                <select  id="marital">
-                    <option value="U"></option>
-                    <option value="A"></option>
-                    <option value="S"></option>
-                    <option value="M"></option>
-                    <option value="B"></option>
+                <label for="marital">Marital Status</label>
+                <select  id="marital" required>
+                    <option value="U">Unknown State</option>
+                    <option value="A">Alternative Relation</option>
+                    <option value="S">Single</option>
+                    <option value="M">Married</option>
+                    <option value="B">Businees Acount</option>
                 </select>
             </div>
 
             <div class="form-grid">
-                <label for="totcalls"></label>
+                <label for="totcalls">Total Number Of Calls</label>
                 <input type="number" step="any" required id="totcalls">
             </div>
 
             <div class="form-grid">
-                <label for="drop_vce_Mean"></label>
+                <label for="drop_vce_Mean">Mean Dropped Voice Calls</label>
                 <input type="number" step="any" required id="drop_vce_Mean">
             </div>
 
             <div class="form-grid">
-                <label for="totrev"></label>
+                <label for="totrev">Total Revenue (totrev):</label>
                 <input type="number" id="totrev" step="any" required>
             </div>
 
+            <div class="button-group">
+                <button type="button" id="churnBtn" class="btn btn-churn">Predict Churn</button>
+                <button type="button" id="creativeBtn" class="btn btn-creative">Predict Markting Offer</button>
+            </div>
+</div>
         </form>
+
+
+        <div id="resultBox" class="result-box hidden">
+            <h3>Prediction Result:</h3>
+            <p id="resultText"></p>
+        </div>
+
     </main>
 
 </body>
