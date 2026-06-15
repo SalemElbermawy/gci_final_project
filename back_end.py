@@ -2,10 +2,25 @@ from pydantic import BaseModel
 from fastapi import FastAPI
 import pandas as pd
 import joblib
+from fastapi.middleware.cors import CORSMiddleware
+import back_model
+import sys
 
+sys.modules['__main__'].MyTransformer = back_model.MyTransformer
 
 
 app=FastAPI()
+
+
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
 
 churn_model=joblib.load("model_final_xgb.pkl")
 creative_model=joblib.load("final_creative_model.pkl")
