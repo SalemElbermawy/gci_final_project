@@ -1,5 +1,5 @@
-const churnUrl="http://127.0.0.1:8000/churn";
-const creativeUrl="http://127.0.0.1:8000/creative";
+const churnUrl="https://salemelbe-final-gci.hf.space/churn";
+const creativeUrl="https://salemelbe-final-gci.hf.space/creative";
 
 
 const myForm = document.getElementById("predictionForm");
