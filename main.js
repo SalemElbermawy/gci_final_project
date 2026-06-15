@@ -1,9 +1,20 @@
-const churnUrl="";
-const creativeUrl="";
+const churnUrl="http://127.0.0.1:8000/churn";
+const creativeUrl="http://127.0.0.1:8000/creative";
+
+
+const myForm = document.getElementById("predictionForm");
+const churn_btn=document.getElementById("churnBtn");
+const creative_btn=document.getElementById("creativeBtn");
 
 async function churnModel(){
 
     const result_board=document.getElementById("resultText");
+    
+    const result_head=document.getElementById("resultBox");
+
+    if (!myForm.checkValidity()) {
+    myForm.reportValidity(); 
+    return; }
 
     message={
         months:parseFloat(document.getElementById("months").value),
@@ -75,6 +86,11 @@ async function churnModel(){
     const response_re=await response.json();
 
     const final_response=response_re.response;
+
+    result_board.innerText=final_response;
+
+    result_head.classList.remove("hidden");
+
     }catch(error){
         console.log("error",error)
     }
@@ -82,6 +98,11 @@ async function churnModel(){
 
 async function creativeModel(){
     const result_board=document.getElementById("resultText");
+    const result_head=document.getElementById("resultBox");
+
+    if (!myForm.checkValidity()) {
+    myForm.reportValidity(); 
+    return; }
 
     message={
 
@@ -149,7 +170,13 @@ async function creativeModel(){
 
         const final_response = response_re.response;
 
+        result_board.innerText=final_response;
+        result_head.classList.remove("hidden")
+
     }catch(error){
         console.log("error: ", error)
     }
 }
+
+churn_btn.addEventListener("click",churnModel)
+creative_btn.addEventListener("click",creativeModel)
