@@ -42,10 +42,55 @@
 
 ---
 
-# Fine Tuning 
+### Fine Tuning & Model
 
 - I have used the final data to find the best hyperparameters for the model and I have tried 3 models 
 - First model XGBoost
 - Second Random Forest
 - Third CatBoost
+- Then I did the best model of each one and save all models by extention ".pkl"
+- And the best pereformance was from the XGBoost
 
+![alt text](image-2.png)
+---
+
+### Final Model Training
+
+- Marketing target (creative target) 
+![alt text](image-1.png)
+---
+
+- Churn Target Model
+![alt text](image-3.png)
+---
+
+### Target From The Model
+
+- First target is churn if the customer stay or close to leave
+- Second Model or target when i did the data analysit of the data i find out the customers leave because thier phones be old so i did model to tell me if the customer need phone and in which level
+- there are 4 levels 
+- Budget (cost-saving offers)
+- No Offer (No intervention needed)
+- Premium (Upgrades)
+- Retention (High-Priority Resolution)
+
+---
+
+### HTML & CSS 
+
+- After about 25 hrs of work I have make a form by HTML & CSS by simple design 
+
+- Make A form with 2 buttons to detect
+
+![alt text](image-4.png)
+
+![alt text](image-5.png)
+---
+
+### Js & FASTAPI & HuggingFace
+
+- I have used FASTAPI to make API connect the model
+- I have Used js to connect this API by the form and the form by the model
+- I have used HuggingFace to make my API on Online server not local
+
+![alt text](image-6.png)
