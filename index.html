@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Prediction</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <div class="logo">
+            AI Control
+        </div>
+
+        <nav>
+            <a href="graphs.html" class="nav-link">Detection Model</a>
+            <a href="graphs.html" class="nav-link">Analysis DashBoard</a>
+        </nav>
+
+    </header>
+    
+    <main class="container">
+        <h2>Input Data Of Customer</h2>
+
+        <p class="subtitle">Enter 25 parameters for Churn & Markting analysis</p>
+
+        <form id="predictionForm">
+
+            <div class="form-grid">
+                <label for="months">Subscribtion Months (months):</label>
+                <input type="number" id="months" step="any" required>
+
+            </div>
+
+            <div class="form-grid">
+                <label for="refrub_new">Used or New Phone (refurb_new):</label>
+            <select id="refrub_new" required>
+                <option value="N">New Phone (N)</option>
+                <option value="R">Refurbished (R)</option>
+            </select>
+            
+            </div>
+
+            <div class="form-grid">
+
+                <label for="eqpdays">Equipment Age in Days (eqpdays)</label>
+                <input type="number"  id="eqpdays" step="any" required>
+
+            </div>
+
+            <div class="form-grid">
+                <label for="asl_flag">Account Ceiling Indicator (asl_flag):</label>
+                <select  id="asl_flag" required>
+                    <option value="N">No Ceiling (N)</option>
+                    <option value="Y">Has Account Ceiling (Y)</option>
+                </select>
+            </div>
+
+            <div class="form-grid">
+                <label for="uniqsubs">Number of unique Subscribtion (uniqsubs):</label>
+                <input type="number" id="uniqsubs" step="any" required>
+
+            </div>
+
+            <div class="form-grid">
+                <label for="hnd_orice"></label>
+                <input type="number" id="hnd_price" step="any" required>
+            </div>
+
+            <div class="form-grid">
+                <label for="mou_Mean"></label>
+                <input type="number" id="mou_Mean" step="any" required>
+            </div>
+
+            <div class="form-grid">
+                <label for="hnd_webcap"></label>
+                <select  id="hnd_webcap" required>
+                    <option value="WCMB"></option>
+                    <option value="WC"></option>
+                    <option value="Missing"></option>
+                    <option value="UNKW"></option>
+                </select>
+            </div>
+
+            <div class="form-grid">
+                <label for="totmrc"></label>
+                <input type="number" id="totmrc" step="any" required>
+            </div>
+
+            <div class="form-grid">
+                <label for="change_mou"></label>
+                <input type="number" id="change_mou" step="any" required>
+            </div>
+
+            <div class="form-grid">
+                <label for="creditcd"></label>
+                <select  id="creditcd" required>
+                    <option value="N"></option>
+                    <option value="Y"></option>
+                </select>
+            </div>
+
+            <div class="form-grid">
+                <label for="ovrmou_Mean"></label>
+                <input type="number" id="ovrmou_Mean" step="any" required>
+            </div>
+
+            <div class="form-grid">
+                <label for="avgqty"></label>
+                <input type="number" step="any" id="avgqty" required>
+            </div>
+
+            <div class="form-grid">
+                <label for="lor"></label>
+                <input type="number" id="lor" step="any" required>
+            </div>
+
+            <div class="form-grid">
+                <label for="change_rev"></label>
+                <input type="number"  id="change_rev" step="any" required>
+            </div>
+
+            <div class="form-grid">
+                <label for="avgrev"></label>
+                <input type="number"  id="avgrev" step="any" required>
+            </div>
+
+            <div class="form-grid">
+                <label for="actvsubs"></label>
+                <input type="number" id="actvsubs" step="any" required>
+            </div>
+
+            <div class="form-grid">
+                <label for="income"></label>
+                <input type="number" id="income" step="any" required>
+            </div>
+
+            <div class="form-grid">
+                <label for="rev_Mean"></label>
+                <input type="number" step="any" required id="rev_Mean">
+            </div>
+
+            <div class="form-grid">
+                <label for="mouiwylisv_Mean"></label>
+                <input type="number" id="mouiwylisv_Mean" required step="any">
+            </div>
+
+            <div class="form-grid">
+                <label for="dualband"></label>
+                <select id="dualband" required>
+                    <option value="N"></option>
+                    <option value="Y"></option>
+                    <option value="T"></option>
+                    <option value="U"></option>
+                </select>
+            </div>
+
+            <div class="form-grid">
+                <label for="marital"></label>
+                <select  id="marital">
+                    <option value="U"></option>
+                    <option value="A"></option>
+                    <option value="S"></option>
+                    <option value="M"></option>
+                    <option value="B"></option>
+                </select>
+            </div>
+
+            <div class="form-grid">
+                <label for="totcalls"></label>
+                <input type="number" step="any" required id="totcalls">
+            </div>
+
+            <div class="form-grid">
+                <label for="drop_vce_Mean"></label>
+                <input type="number" step="any" required id="drop_vce_Mean">
+            </div>
+
+            <div class="form-grid">
+                <label for="totrev"></label>
+                <input type="number" id="totrev" step="any" required>
+            </div>
+
+        </form>
+    </main>
+
+</body>
+</html>
