@@ -1,4 +1,9 @@
-# This is the largest model and preprocessing data project I have ever done and the best deploying without any helping from AI
+# Business Intelligence and Customer Prediction System
+
+
+### This is the largest model and preprocessing data project I have ever done and the best deploying without any helping from AI
+
+
 
 ## So I will explain it clearly below
 - Data 
@@ -9,6 +14,42 @@
 - Targets From The Model
 - HTML & CSS code
 - JavaScript & FAST API % HuggingFace
+
+--- 
+
+# Fast Overview Before Details
+
+### Features
+
+- Predicts whether a customer will churn or stay
+- Predicts what phone offer level the customer needs (Budget, No Offer, Premium, Retention)
+- Built on 100 features merged from two datasets (Record.csv and Client.csv)
+- Trained and compared three models: XGBoost, Random Forest, and CatBoost
+- Best performance achieved with XGBoost
+- Full EDA pipeline including correlation matrix, feature importance, and NaN handling
+- Fine-tuned hyperparameters for the best result
+- Connected to a live API hosted on Hugging Face
+- Simple HTML and CSS form with two prediction buttons
+
+
+### Tech Stack
+
+- Machine Learning : Python , Xgboost, Random Forest, CatBoost, Scikit-Learn, Pandas
+
+- Backend: FastAPI , Joblib
+
+- Fronend: HTML, CSS, JS
+
+- API Hosted: HuggingFace
+
+### Installation
+
+- To run project
+- 1) colone the repo
+- 2) install required libraries
+
+
+# Details
 
 ### Data 
 - Record.csv & Client.csv
