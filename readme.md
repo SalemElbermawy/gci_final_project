@@ -1,7 +1,7 @@
 # Business Intelligence and Customer Prediction System
 
 
-### This is the largest model and preprocessing data project I have ever done and the best deploying without any helping from AI
+### This is the largest model and preprocessing data project I have ever done and the best deploying without 
 
 
 
